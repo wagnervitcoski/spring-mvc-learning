@@ -18,6 +18,15 @@ public class HelloWorldController {
 		return "helloWorld";
 	}
 	
+	/*@RequestMapping(value="processFormTwo", method=RequestMethod.GET,produces=MediaType.APPLICATION_JSON)
+	public MessageJSon letsShoutDude(HttpServletRequest request, Model model){
+		 
+		//String name = request.getParameter("studentName");
+		//model.addAttribute("message","Yo! "+name.toUpperCase());
+		
+		return new MessageJSon("wagner luis vitcoski");
+	}*/
+	
 	
 	@RequestMapping("/showForm")
 	public String showForm(){
